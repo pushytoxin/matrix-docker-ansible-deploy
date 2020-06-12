@@ -8,6 +8,7 @@ After={{ service }}
 
 [Service]
 Type=simple
+Nice=-5
 ExecStartPre=-{{ matrix_host_command_docker }} kill matrix-coturn
 ExecStartPre=-{{ matrix_host_command_docker }} rm matrix-coturn
 
